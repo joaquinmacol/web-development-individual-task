@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Task#1</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="navbar-log">
+            <h1 class="logo">WebDevelopment</h1>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="fields">
+        </div>
+        <form id="Form" method="post" onsubmit="return validateFrom()" action="https://script.google.com/macros/s/AKfycbzOOifGROXnkbcXq3dtQQMZagzd9mLeF_bY9ams2eS9J7F_8yS-pTwKkv_7zfBdTXV6/exec">
+        <div class="form">
+          <div class="personal-details">
+            <span class="title">Motorcycle Registration Form</span>
+            <h3>Owner and Motorcycle Information</h3>
+            <div class="fields">
+                <div class="field">
+                    <label for="">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Full name" required/>
+                </div>
+                <div class="field">
+                    <label for="">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Enter Age" required />
+                </div>
+                <div class="field">
+                    <label for="">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter Address" required/>
+                </div>
+                <div class="field">
+                    <label for="">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email address" required />
+                </div>
+                <div class="field">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                      <label>
+                        <input type="radio" name="gender" value="male" required>
+                        <span>Male</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="gender" value="female" required>
+                        <span>Female</span>
+                      </label>
+                    </div>
+                  </div>
+                <div class="field">
+                    <label for="">Contact Number</label>
+                    <input type="tel" id="contactnumber" name="contactnumber" placeholder="Enter Contact Number" required />
+                </div>
+                <div class="field">
+                    <label for="driverlicensenumber">Driver's License Number</label>
+                    <input type="number" name="driverlicensenumber" id="driverlicensenumber" placeholder="Enter Driver's license number" required />
+                </div>
+                <div class="field">
+                    <label for="">Registration Date</label>
+                    <input type="date" id="registrationdate" name="registrationdate" placeholder="Enter Registation Date" required />
+                </div>
+                <div class="field">
+                    <label for="">Motorcycle Identification Number</label>
+                    <input type="number" name="motorcyclenumber" id="motorcyclenumber" placeholder="Enter Vehicle Identification Number" required />
+                </div>
+                <div class="field">
+                    <label for="">Color of the Motorcycle</label>
+                    <input type="text" id="color" name="color" placeholder="Enter Color" required/>
+                </div>
+                <div class="field">
+                  <label for="fuel-type">Fuel Type</label>
+                    <select id="fueltype" name="fueltype" required>
+                      <option value="" disabled selected>Select</option>
+                      <option value="gasoline">Gasoline</option>
+                      <option value="diesel">Diesel</option>
+                      <option value="electric">Electric</option>
+                    </select>
+                </div>
+                <div class="field">
+                  <label>Motorcycle Inspection Status</label>
+                  <div class="checkbox-group">
+                      <label>
+                      <input type="checkbox" id="inspectionstatus" name="inspectionstatus" value="completed" required> Motorcycle Inspection Completed
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+            <input type="button" value="Submit" onclick="submitForm()">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
